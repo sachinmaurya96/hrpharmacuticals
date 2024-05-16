@@ -1,0 +1,49 @@
+:root{
+  --title-color:#00204c;
+  --title-font: "Bellefair", serif;
+  --primary-color:#6EC1E4;
+  --text-color:#7A7A7A;
+  --acent-color:#61CE70;
+  --satisfy: "Satisfy", cursive;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Bellefair", serif;
+  font-weight: normal;
+}
+p{
+  font-family: "Work Sans", sans-serif;
+}
+.container{
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  .container{
+    width: calc(100% - 150px);
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .container{
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+}
