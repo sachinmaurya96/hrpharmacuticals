@@ -195,15 +195,17 @@ const Wrapper = styled.nav`
     .logo{
       a{
         display: flex;
-        align-items: center;
-        font-size: 25px;
+        align-items: end;
+        font-size: 22px;
         font-weight: 300;
         text-transform: capitalize;
+        font-weight: 400;
       }
     }
     img {
-      max-width: 30px;
+      max-width: 25px;
       height: auto;
+      margin-bottom: 4px;
     }
     a {
       text-decoration: none;

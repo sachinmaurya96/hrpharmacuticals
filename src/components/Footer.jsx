@@ -49,9 +49,12 @@ const Footer = () => {
       <div className="footer-links">
       <div className="container">
         <div className="company_detail">
-          <div className="logo">
-            <img src="/img/hrlogo.png" alt="" />
-          </div>
+        <div className="logo">
+                  <a href="">
+                    <img src="/img/hrlogo.png" alt="" />
+                    Pharmaceutical
+                  </a>
+                </div>
           <p>Sanstuti Pharmaceuticals is a quality derma care initiative which has been made with a vision of providing the best of derma care products</p>
           <div className="other_info">
             <div className="location">
@@ -248,11 +251,23 @@ background-color: #f7f7f7;
     flex-direction: column;
     gap: 25px;
     .logo{
-      img{
-        width: 50px;
-        height: auto;
+      a{
+        display: flex;
+        align-items: end;
+        font-size: 22px;
+        font-weight: 300;
+        text-transform: capitalize;
+        font-weight: 400;
+        text-decoration: none;
+        color: #333;
       }
+      img {
+      max-width: 25px;
+      height: auto;
+      margin-bottom: 4px;
     }
+    }
+   
    
     p{
       font-size: 14px;
