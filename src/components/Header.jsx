@@ -67,13 +67,14 @@ const Header = () => {
           <div className="top">
             <div className="action">
               <IoIosMenu size={25} cursor={"pointer"} onClick={() => setToggle(true)} />
-              Menu
+             
             </div>
             <div className="logo">
-              <a href="">
-                <img src="https://sanstutipharmaceuticals.com/wp-content/uploads/2023/06/Untitled-design-2023-06-07T183939.882.png" alt="" />
-              </a>
-            </div>
+                  <a href="">
+                    <img src="/img/hrlogo.png" alt="" />
+                    Pharmaceutical
+                  </a>
+                </div>
             <div className="cart">
               <IoCartOutline size={25}  cursor={"pointer"}/>
               <span>0</span>
@@ -256,9 +257,21 @@ const Wrapper = styled.nav`
       padding: 15px 10px;
     }
     .logo{
-      img{
-        width: 120px;
+      a{
+        display: flex;
+        align-items: end;
+        font-size: 22px;
+        font-weight: 300;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #333;
+        text-decoration: none;
       }
+    }
+    img {
+      max-width: 25px;
+      height: auto;
+      margin-bottom: 4px;
     }
     .action{
       display: flex;
