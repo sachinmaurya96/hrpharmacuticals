@@ -15,6 +15,7 @@ import ButtonStyle2 from "../components/Buttons/ButtonStyle2";
 import ButtonOutline from "../components/Buttons/ButtonOutline";
 import HeroSliderCard from "../components/productcard/HeroSliderCard";
 import BlogSlider from "../components/sliders/BlogSlider";
+import skillCare from "../../public/img/Skin_care.png";
 
 const HomePage = () => {
   return (
@@ -34,16 +35,16 @@ const HomePage = () => {
       <div className="discover">
         <div className="container">
           <div className="image">
-            <img src="/img/model.png" alt="" />
+            <img src={skillCare} alt="" />
           </div>
           <div className="content">
             <div className="title">
-            Discover a beautiful you
+            Transform Your Skin
             </div>
             <div className="subtitle">
-            with our new <span>Skin Essentials</span>
+            with our new <span>Skin Essentials!</span>
             </div>
-            <p>Unlock Your Beauty Potential: Discover a Beautiful You with Our New Skin Essentials – Rejuvenate, Nourish, and Embrace Your Natural Glow</p>
+            <p>Revitalize your skincare routine with our innovative Skin Essentials collection, designed to nourish, rejuvenate, and enhance your natural radiance.</p>
             <div className="product-grid">
               <div className="card">
                 <div className="icon"></div>
@@ -58,41 +59,23 @@ const HomePage = () => {
                 <div className="tile">Eye care Product</div>
               </div>
             </div>
-            <div className="buttons">
+            {/* <div className="buttons">
               <ButtonStyle2>shop now</ButtonStyle2>
               <ButtonOutline>read more</ButtonOutline>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="discover2">
+      {/* <div className="discover2">
         <div className="container">
           <div className="content">
-            <div className="title">Enjoy the best quality,</div>
+            <div className="title">Experience Excellence</div>
             <div className="subtitle">
-            made by <span>Sanstuti</span><br /> <span>Pharmaceuticals</span> @15% <br /> Discount
+            made by <span>HR</span><br /> <span>Pharmaceuticals</span> @15% <br /> Off!
 
             </div>
-            <p>Sanstuti Pharmaceuticals, crafting excellence with care, Experience the finest quality, beyond compare.</p>
-            <p><strong>Elevate your well-being with products that never change</strong></p>
-            <div className="counter">
-                <div>
-                  <span className="number">00</span>
-                  <span className="time">Days</span>
-                </div>
-                <div>
-                  <span className="number">00</span>
-                  <span className="time">Days</span>
-                </div>
-                <div>
-                  <span className="number">00</span>
-                  <span className="time">Days</span>
-                </div>
-                <div>
-                  <span className="number">00</span>
-                  <span className="time">Days</span>
-                </div>
-            </div>
+            <p>Indulge in the exceptional craftsmanship of Sanstuti Pharmaceuticals, where every product is meticulously crafted with care.</p>
+            <p><strong>Elevate your well-being with our premium quality offerings, now available at an exclusive 15% discount.</strong></p>
             <div className="buttons">
               <ButtonStyle2>shop now</ButtonStyle2>
               <ButtonOutline>read more</ButtonOutline>
@@ -102,20 +85,20 @@ const HomePage = () => {
             <img src="/img/model2.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
       <hr />
       <div className="products_journey">
         <div className="container">
          <div className="content">
-         <div className="subtitle">Product's Journey</div>
-          <div className="title">100% Rigorously tested and Doctor-certified.</div>
-          <p>Majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+         <div className="subtitle">Essential Guides</div>
+          <div className="title">Your Roadmap to Wellness for Optimal Health</div>
+          <p>Whether you're seeking guidance on medical check-ups, diabetes management, or general health improvement, our comprehensive resources are here to support you on your journey towards a healthier lifestyle.</p>
          </div>
          
          <div className="grid">
-          <CardStyle4 img={"/img/doc1.png"} num={"1."}/>
-          <CardStyle4 img={"/img/doc2.png"} num={"2."}/>
-          <CardStyle4 img={"/img/doc3.png"} num={"3."}/>
+          <CardStyle4 img={"/img/doc1.png"} num={"1."} Title={"Medical Check Up"} Content={"Invest in your well-being with a thorough medical check-up to ensure your health is on track and address any potential concerns proactively."}/>
+          <CardStyle4 img={"/img/doc2.png"} num={"2."} Title={"How To Control Diabetes"} Content={"Embark on a journey to manage diabetes effectively with our comprehensive guide, offering practical tips and strategies for improved health and well-being."}/>
+          <CardStyle4 img={"/img/doc3.png"} num={"3."} Title={"Your Guide to a Healthier Life!"} Content={"Start your journey towards improved well-being with our comprehensive guide, packed with invaluable insights and practical advice to help you live a healthier, more fulfilling life."}/>
          </div>
         </div>
       </div>
@@ -123,9 +106,9 @@ const HomePage = () => {
       <div className="blogs">
         <div className="container">
         <div className="content">
-         <div className="subtitle">Product's Journey</div>
-          <div className="title">100% Rigorously tested and Doctor-certified.</div>
-          <p>Majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+         <div className="subtitle">Insightful Blogs</div>
+          <div className="title">Immerse Yourself in Our Enlightening Blogs!</div>
+          <p>Explore a wealth of knowledge and insight within our blog collection. From helpful tips to thought-provoking viewpoints, our blogs are a valuable resource to deepen your understanding and spark personal growth on your journey to enlightenment.</p>
          </div>
          <div className="blog_slider">
           <BlogSlider/>
@@ -156,10 +139,10 @@ const Wrapper = styled.section`
   hr {
     border: none;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #7a7a7a;
   }
   .discover{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #7a7a7a;
     .container{
       display: grid;
       grid-template-columns: repeat(2,1fr);

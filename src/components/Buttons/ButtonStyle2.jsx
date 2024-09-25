@@ -10,8 +10,9 @@ const ButtonStyle2 = ({children}) => {
 }
 const Wrapper = styled.div`
     button{
-        color: #fff;
-        background-color: var(--primary-color);
+        // color: #fff;
+        color:black;
+        background-color: #EDC967;
         padding: 10px 20px;
         outline: none;
         border: none;

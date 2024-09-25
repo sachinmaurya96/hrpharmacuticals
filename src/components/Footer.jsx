@@ -14,7 +14,7 @@ import { SiFlipkart } from "react-icons/si";
 const Footer = () => {
   return (
     <Wrapper>
-      <div className="about_service">
+      {/* <div className="about_service">
         <div className="container">
           <div className="service_card">
             <div className="icon"><img src="/img/shipping.png" alt="" /></div>
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="footer-links">
       <div className="container">
         <div className="company_detail">
@@ -55,25 +55,25 @@ const Footer = () => {
                     Pharmaceutical
                   </a>
                 </div>
-          <p>Sanstuti Pharmaceuticals is a quality derma care initiative which has been made with a vision of providing the best of derma care products</p>
+          <p>HR Pharmaceuticals is dedicated to offering top-notch dermatological care products, driven by a vision to deliver the highest quality in derma care.</p>
           <div className="other_info">
             <div className="location">
               <span>
                 <FaLocationArrow />
               </span>
-              559, Sector 43, Golf Course Road
+              Plot no-11,Sanjay Colony,Arthala,Ghaziabad
             </div>
             <div className="phone">
               <span>
                 <MdOutlinePhoneAndroid />
               </span>
-              Phone:999999999999
+              Phone:8929055230
             </div>
             <div className="mail">
               <span>
                 <CiMail />
               </span>
-              Mail:support@gmail.com
+              Mail:care@hrpcpl.com
             </div>
           </div>
         </div>
@@ -154,15 +154,15 @@ const Footer = () => {
             <span className="twitter">
               <BsTwitterX size={20}/>
             </span>
-            <span className="pinterest">
+            {/* <span className="pinterest">
               <FaPinterest size={20}/>
-            </span>
+            </span> */}
             <span className="linkedin">
               <FaLinkedinIn size={20}/>
             </span>
-            <span className="telegram">
+            {/* <span className="telegram">
               <FaTelegramPlane size={20}/>
-            </span>
+            </span> */}
           </div>
           <span className="title">checkout us at</span>
           <div className="shoping-app">
@@ -176,7 +176,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="consultation">
+      {/* <div className="consultation">
         <div className="container">
           <div className="left">
             <div className="logo">
@@ -184,7 +184,7 @@ const Footer = () => {
             </div>
             <div className="info">
               <span className="title">Get Free Consultation Now</span>
-              <p>Get Free Prescription for your skin & hair care issues.</p>
+              <p>Receive a complimentary prescription for your skin and hair care concerns.</p>
             </div>
           </div>
           <div className="form">
@@ -192,15 +192,15 @@ const Footer = () => {
             <button>know more</button>
           </div>
         </div>
-      </div>
-      <div className="copyright">
+      </div> */}
+      {/* <div className="copyright">
         <div className="container">
           <div className="text-content">
-          Developed By <strong>AdverRise</strong> 2023 <strong>Advertrise Digital Marketing Agency.</strong>
+          Developed By <strong>Brijesh Jha</strong> 2024 <strong>Software Developer</strong>
           </div>
           <div className="images"></div>
         </div>
-      </div>
+      </div> */}
     </Wrapper>
   );
 };
@@ -331,7 +331,7 @@ background-color: #f7f7f7;
     }
     .social-media{
       display: grid;
-      grid-template-columns: repeat(5,1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 5px;
       span{
         height: 50px;

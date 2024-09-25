@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 
 const HeroSliderCard = ({subtitle,title,desc,img,bgimg}) => {
-  const [bg,setBg] = useState(`linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(${bgimg})` ||`linear-gradient(to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/img/productbg2.png")`)
+  const [bg,setBg] = useState(`linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(${bgimg}) ||linear-gradient(to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/img/productbg2.png")`)
 
   AOS.init({
     // Global settings:
@@ -15,11 +15,11 @@ const HeroSliderCard = ({subtitle,title,desc,img,bgimg}) => {
     startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
     initClassName: 'aos-init', // class applied after initialization
     animatedClassName: 'aos-animate', // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    useClassNames: false, // if true, will add content of data-aos as classes on scroll
     disableMutationObserver: false, // disables automatic mutations' detections (advanced)
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    // Settings that can be overridden on per-element basis, by data-aos-* attributes:
     offset: 120, // offset (in px) from the original trigger point
     delay: 300, // values from 0 to 3000, with step 50ms
     duration: 400, // values from 0 to 3000, with step 50ms
@@ -31,12 +31,12 @@ const HeroSliderCard = ({subtitle,title,desc,img,bgimg}) => {
   });
   
   return (
-    <Card style={{backgroundImage:bg}}>
+    <Card style={{backgroundColor:'black'}}>
       <div className="container">
         <div className="content">
-          <div className="subTitle"  data-aos="flip-down">{subtitle || "Natural Pilesaway"}</div>
-          <div className="title"  data-aos="flip-down">{title || "Natural Pilesaway"}</div>
-          <div className="desc">{desc || "The Old Natural Pilesaway Piles medicine I For Piles, Hemorrhoid Support, Bavasir, Fissure."}</div>
+          <div className="subTitle"  data-aos="flip-down">{subtitle || "Fungipurge Dusting Powder"}</div>
+          <div className="title"  data-aos="flip-down">{title || "Fungipurge Dusting Powder"}</div>
+          <div className="desc">{desc || "A powder aimed at treating fungal and bacterial skin infection by absorbing excess moisture and preventing further growth."}</div>
           <div className="buttons">
             <ButtonStyle2>Shop now</ButtonStyle2>
             <ButtonOutline>view details</ButtonOutline>
@@ -70,8 +70,10 @@ display: flex;
     align-items: start;
   }
   .desc{
-    color: #fff;
+    // color: #fff;
+    color:#EDC967;
     text-align: start;
+
   }
   .title{
     font-size: 30px;
@@ -82,7 +84,8 @@ display: flex;
   }
   .subTitle{
     font-size: 25px;
-    color: var(--primary-color);
+    // color: var(--primary-color);
+    color:#EDC967;
     font-family: var(--satisfy);
   }
   .buttons{

@@ -11,9 +11,9 @@ const ButtonOutline = ({children}) => {
 const Wrapper = styled.div`
     button{
         padding: 10px 20px;
-        color: var(--primary-color);
+        color:#EDC967;
         font-weight: 600;
-        border: 1px solid var(--primary-color);
+        border: 1px solid #EDC967;
         transition: all 0.3s;
         background-color: transparent;
         width: max-content;

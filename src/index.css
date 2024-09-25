@@ -11,6 +11,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+  /* background-color: #fff; */
+  /* background-color: #f0bb9a; */
+  /* background-color: rgba(116, 111, 111, 0.1); */
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "Bellefair", serif;

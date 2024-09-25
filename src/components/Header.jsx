@@ -14,28 +14,28 @@ const Header = () => {
       <Wrapper>
         <div className="desktop-nav">
           <div className="container">
-            <div className="form">
+            {/* <div className="form">
               <input type="text" placeholder="Search for products" />
               <span className="search-icon">
                 {" "}
                 <CiSearch size={25} />
               </span>
-            </div>
+            </div> */}
             <div className="nav-links">
               <ul>
                 <li>
                   <a href="#">Home</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">SHOP</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#">TESTIMONIALS</a>
                 </li>
                 <li className="logo">
                   <a href="">
                     <img src="/img/hrlogo.png" alt="" />
-                    Pharmaceutical
+                    {/* Pharmaceutical */}
                   </a>
                 </li>
                 <li>
@@ -49,7 +49,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="action">
+            {/* <div className="action">
               <div className="like">
                 <CiHeart size={25} />
               </div>
@@ -60,7 +60,7 @@ const Header = () => {
                 <IoCartOutline size={25} />
                 <span>0</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mobile-nav">
@@ -140,8 +140,8 @@ const Wrapper = styled.nav`
   .desktop-nav {
    padding: 10px 0;
    
-    background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -155,8 +155,8 @@ const Wrapper = styled.nav`
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    position:relative;
   }
   .form {
     max-width: 400px;
@@ -192,6 +192,7 @@ const Wrapper = styled.nav`
       gap: 20px;
       list-style: none;
       align-items: center;
+      justify-content:center;
     }
     .logo{
       a{
@@ -204,7 +205,7 @@ const Wrapper = styled.nav`
       }
     }
     img {
-      max-width: 25px;
+      max-width: 40px;
       height: auto;
       margin-bottom: 4px;
     }

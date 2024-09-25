@@ -63,8 +63,10 @@ const GridProductSlider = () => {
 };
 const Wrapper = styled.div`
 width: 100%;
+
 .swiper{
     width: 100%;
+    
 }
 `;
 export default GridProductSlider;
