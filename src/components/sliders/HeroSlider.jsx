@@ -28,10 +28,10 @@ const HeroSlider = () => {
           <HeroSliderCard bgimg={"/img/productbg2.png"} img={"/img/product9png.png"}/>
         </SwiperSlide>
         <SwiperSlide>
-          <HeroSliderCard bgimg={"/img/productbg3.png"}  img={"/img/product5png.png"} desc={"Quick Relief from Back Pain, Neck/Shoulder Pain, Sprain, Joint Pain"} title={"Volini Activ Pain Relief "} subtitle={"Volini Activ"}/>
+          <HeroSliderCard bgimg={"/img/productbg3.png"}  img={"/img/product5png.png"} desc={"A cream designed to soothe and alleviate symptoms associated with skin irritation and inflammation."} title={"Luecan Cream"} subtitle={"Luecan Cream  Skin Care "}/>
         </SwiperSlide>
         <SwiperSlide>
-          <HeroSliderCard bgimg={"/img/productbg4.png"} img={"/img/product10png.png"} desc={"Ortho Care - Pain Relief Gel Ortho Care Pain Relief Gel is made from various analgesic herbs,"} title={"Orthocare gel pain relief"} subtitle={"Orthocare gel"}/>
+          <HeroSliderCard bgimg={"/img/productbg4.png"} img={"/img/product10png.png"} desc={"A facial cleanser specifically formulated to combat acne and promote clearer skin."} title={"Dermatress Acne Face Wash"} subtitle={"Dermatress Acne Face Wash"}/>
         </SwiperSlide>
       </Swiper>
     </Wrapper>
