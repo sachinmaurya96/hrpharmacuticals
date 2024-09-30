@@ -55,7 +55,7 @@ const GridProductSlider = () => {
       >
         <SwiperSlide><CardStyle1 img={"/img/product1.png"}/></SwiperSlide>
         <SwiperSlide><CardStyle1 img={"/img/product2.png"}/></SwiperSlide>
-        <SwiperSlide><CardStyle1 img={"/img/product3.png"}/></SwiperSlide>
+        <SwiperSlide><CardStyle1 img={"/img/product5.jpg"}/></SwiperSlide>
         <SwiperSlide><CardStyle1 img={"/img/product4.png"}/></SwiperSlide>
       </Swiper>
     </Wrapper>

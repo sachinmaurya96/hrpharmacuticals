@@ -55,65 +55,67 @@ const GridProductSlider3 = () => {
           },
         }}
       >
-      
-        <SwiperSlide><CardStyle2 img={"/img/product8.jpg"}/></SwiperSlide>
-        <SwiperSlide><CardStyle2 img={"/img/product10.jpg"}/></SwiperSlide>
-        <SwiperSlide><CardStyle2 img={"/img/product12.jpg"}/></SwiperSlide>
+        <SwiperSlide>
+          <CardStyle2 img={"/img/product8.jpg"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardStyle2 img={"/img/product10.jpg"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardStyle2 img={"/img/product12.jpg"} />
+        </SwiperSlide>
         <SwiperSlide className="default-card">
-            <div className="card">
-                <div className="subtitle">Hairloss Treatment</div>
-                <div className="title">Professional</div>
-                <div className="subtitle2">Hailcare</div>
-                <p>Unleash the Power Within Your Tresses".Your Journey to Hair Perfection Starts Here</p>
-                <div className="btn">
-                    <ButtonStyle1>continue shopping</ButtonStyle1>
-                </div>
-            </div>
+          <div className="card">
+            <div className="subtitle">Skincare Solutions</div>
+            <div className="title">Discover Your Skin's Secret Weapon!</div>
+            {/* <div className="subtitle2">Hailcare</div> */}
+            <p>Introducing a range of advanced skincare solutions to address various dermatological concerns.</p>
+            <div className="btn">{/* <ButtonStyle1>continue shopping</ButtonStyle1> */}</div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </Wrapper>
   );
 };
 const Wrapper = styled.div`
-width: 100%;
-.swiper{
+  width: 100%;
+  .swiper {
     width: 100%;
-}
-.card{
+  }
+  .card {
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    .subtitle{
-        color: var(--primary-color);
-        font-family: "Satisfy", cursive;
-        font-size: 25px;
+    .subtitle {
+      color: #edc967;
+      font-family: "Satisfy", cursive;
+      font-size: 25px;
     }
-    .title{
-        font-weight: 600;
-        font-size: 35px;
-        text-transform: uppercase;
-        color: #333;
+    .title {
+      font-weight: 600;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #333;
     }
-    .subtitle2{
-        font-size: 30px;
-        color: #333;
-        font-weight: 400;
-        text-transform: uppercase;
-       
+    .subtitle2 {
+      font-size: 30px;
+      color: #333;
+      font-weight: 400;
+      text-transform: uppercase;
     }
-    p{
-            color: var(--text-color);
-            line-height: 25px;
-        }
-}
-@media only screen and (max-width: 600px){
-.card{
-  display: none;
-}
-.default-card{
-  display: none;
-}
-}
+    p {
+      color: var(--text-color);
+      line-height: 25px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .card {
+      display: none;
+    }
+    .default-card {
+      display: none;
+    }
+  }
 `;
 export default GridProductSlider3;

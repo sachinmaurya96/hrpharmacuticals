@@ -56,13 +56,13 @@ const GridProductSlider2 = () => {
         }}
       >
         <SwiperSlide className="default-card">
-            <div className="card">
-                <div className="subtitle">Hairloss Treatment</div>
-                <div className="title">Professional</div>
-                <div className="subtitle2">Hailcare</div>
-                <p>Unleash the Power Within Your Tresses".Your Journey to Hair Perfection Starts Here</p>
+        <div className="card">
+                <div className="subtitle">Skincare solutions</div>
+                <div className="title">Elvate your Skincare Routine.</div>
+                {/* <div className="subtitle2">Hailcare</div> */}
+                <p>Discover the ultimate in Skincare with our expertly formulated products.</p>
                 <div className="btn">
-                    <ButtonStyle1>continue shopping</ButtonStyle1>
+                    {/* <ButtonStyle1>continue shopping</ButtonStyle1> */}
                 </div>
             </div>
         </SwiperSlide>
@@ -87,7 +87,7 @@ width: 100%;
     gap: 20px;
     text-align: center;
     .subtitle{
-        color: var(--primary-color);
+        color: #EDC967;
         font-family: "Satisfy", cursive;
         font-size: 25px;
     }

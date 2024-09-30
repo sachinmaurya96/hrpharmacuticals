@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CardStyle4 = ({img,num}) => {
+const CardStyle4 = ({img,num,Title,Content}) => {
   return (
     <Card>
       <div className="image">
@@ -13,10 +13,10 @@ const CardStyle4 = ({img,num}) => {
         </div>
         <div className="info">
             <div className="title">
-                Development
+                {Title}
             </div>
             <div className="desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestias autem quam assumenda dolores aut perspiciatis ut placeat voluptatibus? Ducimus commodi rem quam tempore aliquid!
+                {Content}
             </div>
         </div>
       </div>

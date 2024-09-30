@@ -165,14 +165,14 @@ const Footer = () => {
             </span> */}
           </div>
           <span className="title">checkout us at</span>
-          <div className="shoping-app">
+          {/* <div className="shoping-app">
             <span className="amazon">
              <img src="/img/amazon.png" alt="" />
             </span>
             <span className="flipkart">
               <img src="/img/flipkart.png" alt="" />
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
       </div>

@@ -38,11 +38,9 @@ const HomePage = () => {
             <img src={skillCare} alt="" />
           </div>
           <div className="content">
-            <div className="title">
-            Transform Your Skin
-            </div>
+            <div className="title">Transform Your Skin</div>
             <div className="subtitle">
-            with our new <span>Skin Essentials!</span>
+              with our new <span>Skin Essentials!</span>
             </div>
             <p>Revitalize your skincare routine with our innovative Skin Essentials collection, designed to nourish, rejuvenate, and enhance your natural radiance.</p>
             <div className="product-grid">
@@ -89,30 +87,35 @@ const HomePage = () => {
       <hr />
       <div className="products_journey">
         <div className="container">
-         <div className="content">
-         <div className="subtitle">Essential Guides</div>
-          <div className="title">Your Roadmap to Wellness for Optimal Health</div>
-          <p>Whether you're seeking guidance on medical check-ups, diabetes management, or general health improvement, our comprehensive resources are here to support you on your journey towards a healthier lifestyle.</p>
-         </div>
-         
-         <div className="grid">
-          <CardStyle4 img={"/img/doc1.png"} num={"1."} Title={"Medical Check Up"} Content={"Invest in your well-being with a thorough medical check-up to ensure your health is on track and address any potential concerns proactively."}/>
-          <CardStyle4 img={"/img/doc2.png"} num={"2."} Title={"How To Control Diabetes"} Content={"Embark on a journey to manage diabetes effectively with our comprehensive guide, offering practical tips and strategies for improved health and well-being."}/>
-          <CardStyle4 img={"/img/doc3.png"} num={"3."} Title={"Your Guide to a Healthier Life!"} Content={"Start your journey towards improved well-being with our comprehensive guide, packed with invaluable insights and practical advice to help you live a healthier, more fulfilling life."}/>
-         </div>
+          <div className="content">
+            <div className="subtitle">Essential Guides</div>
+            <div className="title">Your Roadmap to Wellness for Optimal Health</div>
+            <p>Whether you're seeking guidance on medical check-ups, diabetes management, or general health improvement, our comprehensive resources are here to support you on your journey towards a healthier lifestyle.</p>
+          </div>
+
+          <div className="grid">
+            <CardStyle4 img={"/img/doc1.png"} num={"1."} Title={"Medical Check Up"} Content={"Invest in your well-being with a thorough medical check-up to ensure your health is on track and address any potential concerns proactively."} />
+            <CardStyle4 img={"/img/doc2.png"} num={"2."} Title={"How To Control Diabetes"} Content={"Embark on a journey to manage diabetes effectively with our comprehensive guide, offering practical tips and strategies for improved health and well-being."} />
+            <CardStyle4
+              img={"/img/doc3.png"}
+              num={"3."}
+              Title={"Your Guide to a Healthier Life!"}
+              Content={"Start your journey towards improved well-being with our comprehensive guide, packed with invaluable insights and practical advice to help you live a healthier, more fulfilling life."}
+            />
+          </div>
         </div>
       </div>
       <hr />
       <div className="blogs">
         <div className="container">
-        <div className="content">
-         <div className="subtitle">Insightful Blogs</div>
-          <div className="title">Immerse Yourself in Our Enlightening Blogs!</div>
-          <p>Explore a wealth of knowledge and insight within our blog collection. From helpful tips to thought-provoking viewpoints, our blogs are a valuable resource to deepen your understanding and spark personal growth on your journey to enlightenment.</p>
-         </div>
-         <div className="blog_slider">
-          <BlogSlider/>
-         </div>
+          <div className="content">
+            <div className="subtitle">Insightful Blogs</div>
+            <div className="title">Immerse Yourself in Our Enlightening Blogs!</div>
+            <p>Explore a wealth of knowledge and insight within our blog collection. From helpful tips to thought-provoking viewpoints, our blogs are a valuable resource to deepen your understanding and spark personal growth on your journey to enlightenment.</p>
+          </div>
+          <div className="blog_slider">
+            <BlogSlider />
+          </div>
         </div>
       </div>
       <Footer />
@@ -141,62 +144,62 @@ const Wrapper = styled.section`
     height: 1px;
     background-color: #7a7a7a;
   }
-  .discover{
+  .discover {
     background-color: #7a7a7a;
-    .container{
+    .container {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 50px;
-      img{
+      img {
         width: 100%;
         height: 100%;
       }
     }
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 20px;
       padding: 50px 0;
-      .title{
+      .title {
         font-size: 40px;
         font-weight: 600;
       }
-      .subtitle{
+      .subtitle {
         font-size: 40px;
         font-weight: 300;
-        span{
-          color: var(--primary-color);
+        span {
+          color: #edc967;
           font-weight: 400;
           font-family: "Satisfy", cursive;
         }
       }
-      p{
+      p {
         color: var(--text-color);
       }
     }
-    .buttons{
+    .buttons {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .product-grid{
+    .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       font-weight: 600;
     }
   }
-  .discover2{
-    .container{
+  .discover2 {
+    .container {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 50px;
-      img{
+      img {
         width: 100%;
         height: 100%;
       }
     }
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -204,29 +207,29 @@ const Wrapper = styled.section`
       gap: 20px;
       text-align: center;
       padding: 50px 0;
-      .title{
+      .title {
         font-size: 40px;
         font-weight: 600;
       }
-      .subtitle{
+      .subtitle {
         font-size: 40px;
         font-weight: 300;
-        
-        span{
+
+        span {
           color: var(--primary-color);
           font-weight: 400;
           font-family: "Satisfy", cursive;
         }
       }
-      p{
+      p {
         color: var(--text-color);
         text-align: center;
       }
     }
-    .counter{
+    .counter {
       display: flex;
       gap: 5px;
-      div{
+      div {
         width: 80px;
         height: 80px;
         display: flex;
@@ -235,30 +238,29 @@ const Wrapper = styled.section`
         justify-content: center;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        .number{
-         
+        .number {
           font-size: 25px;
         }
-        .time{
+        .time {
           font-weight: 300;
           color: var(--text-color);
         }
       }
     }
-    .buttons{
+    .buttons {
       display: flex;
       align-items: center;
       gap: 10px;
     }
   }
-  .products_journey{
-    .container{
+  .products_journey {
+    .container {
       display: flex;
       flex-direction: column;
       gap: 50px;
-     align-items: center;
+      align-items: center;
     }
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -266,37 +268,36 @@ const Wrapper = styled.section`
       gap: 20px;
       text-align: center;
       max-width: 700px;
-      min-width: 300px ;
-      .title{
+      min-width: 300px;
+      .title {
         font-size: 30px;
         font-weight: 600;
       }
-      .subtitle{
+      .subtitle {
         font-size: 25px;
-        color: var(--primary-color);
-          font-weight: 400;
-          font-family: "Satisfy", cursive;
-        
+        color: #edc967;
+        font-weight: 400;
+        font-family: "Satisfy", cursive;
       }
-      p{
+      p {
         color: var(--text-color);
         text-align: center;
       }
     }
-    .grid{
+    .grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 50px;
     }
   }
-  .blogs{
-    .container{
+  .blogs {
+    .container {
       display: flex;
       flex-direction: column;
       gap: 50px;
-     align-items: center;
+      align-items: center;
     }
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -304,53 +305,50 @@ const Wrapper = styled.section`
       gap: 20px;
       text-align: center;
       max-width: 700px;
-      min-width: 300px ;
-      .title{
+      min-width: 300px;
+      .title {
         font-size: 30px;
         font-weight: 600;
       }
-      .subtitle{
+      .subtitle {
         font-size: 25px;
-        color: var(--primary-color);
-          font-weight: 400;
-          font-family: "Satisfy", cursive;
-        
+        color: #edc967;
+        font-weight: 400;
+        font-family: "Satisfy", cursive;
       }
-      p{
+      p {
         color: var(--text-color);
         text-align: center;
       }
     }
-    .blog_slider{
+    .blog_slider {
       max-width: 100%;
     }
   }
-  @media only screen and (max-width:1113px){
+  @media only screen and (max-width: 1113px) {
     padding-top: 70px;
   }
-  @media only screen and (max-width:728px){
-    .discover{
-      .container{
-        grid-template-columns: 100%;
-      }
-      
-    }
-    .discover2{
-      .container{
-       display: flex;
-       flex-direction: column;
-       gap: 50px;
-       flex-direction: column-reverse;
-      }
-    }
-    .products_journey{
-      .grid{
+  @media only screen and (max-width: 728px) {
+    .discover {
+      .container {
         grid-template-columns: 100%;
       }
     }
-    
+    .discover2 {
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        flex-direction: column-reverse;
+      }
+    }
+    .products_journey {
+      .grid {
+        grid-template-columns: 100%;
+      }
+    }
   }
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width: 600px) {
     gap: 30px;
   }
 `;

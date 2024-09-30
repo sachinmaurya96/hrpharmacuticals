@@ -31,7 +31,7 @@ const HeroSliderCard = ({subtitle,title,desc,img,bgimg}) => {
   });
   
   return (
-    <Card style={{backgroundColor:'black'}}>
+    <Card style={{ backgroundImage: "url('../../../public/Background12.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className="card_main">
       <div className="container">
         <div className="content">
           <div className="subTitle"  data-aos="flip-down">{subtitle || "Fungipurge Dusting Powder"}</div>
