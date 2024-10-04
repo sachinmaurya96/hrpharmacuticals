@@ -67,7 +67,7 @@ const Footer = () => {
               <span>
                 <MdOutlinePhoneAndroid />
               </span>
-              Phone:8929055230
+              Phone:8929055203
             </div>
             <div className="mail">
               <span>
