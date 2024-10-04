@@ -6,6 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
             <div className="nav-links">
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 {/* <li>
                   <a href="#">SHOP</a>
@@ -42,7 +43,7 @@ const Header = () => {
                   <a href="">BLOG</a>
                 </li>
                 <li>
-                  <a href="">ABOUT US</a>
+                  <Link to="/about-us">ABOUT US</Link>
                 </li>
                 <li>
                   <a href="">CONTACT US</a>
@@ -67,31 +68,30 @@ const Header = () => {
           <div className="top">
             <div className="action">
               <IoIosMenu size={25} cursor={"pointer"} onClick={() => setToggle(true)} />
-             
             </div>
             <div className="logo">
-                  <a href="">
-                    <img src="/img/hrlogo.png" alt="" />
-                    Pharmaceutical
-                  </a>
-                </div>
+              <a href="">
+                <img src="/img/hrlogo.png" alt="" />
+                Pharmaceutical
+              </a>
+            </div>
             <div className="cart">
-              <IoCartOutline size={25}  cursor={"pointer"}/>
+              <IoCartOutline size={25} cursor={"pointer"} />
               <span>0</span>
             </div>
           </div>
           <div className="bottom">
-          <input type="text" placeholder="Search for products" />
-              <button className="search-icon">
-                {" "}
-                <CiSearch size={25} />
-              </button>
+            <input type="text" placeholder="Search for products" />
+            <button className="search-icon">
+              {" "}
+              <CiSearch size={25} />
+            </button>
           </div>
         </div>
       </Wrapper>
-      <Sidebar className={toggle?"show":""}>
+      <Sidebar className={toggle ? "show" : ""}>
         <div className="action">
-          <RxCross2 size={25} cursor={"pointer"} onClick={()=>setToggle(false)}/>
+          <RxCross2 size={25} cursor={"pointer"} onClick={() => setToggle(false)} />
           Close
         </div>
         <div className="form">
@@ -138,9 +138,9 @@ const Header = () => {
 };
 const Wrapper = styled.nav`
   .desktop-nav {
-   padding: 10px 0;
-   
-    background-color:#fff;
+    padding: 10px 0;
+
+    background-color: #fff;
     // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: start;
@@ -151,12 +151,12 @@ const Wrapper = styled.nav`
     left: 0;
     z-index: 9;
     /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;  */
-   }
+  }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
   }
   .form {
     max-width: 400px;
@@ -192,10 +192,10 @@ const Wrapper = styled.nav`
       gap: 20px;
       list-style: none;
       align-items: center;
-      justify-content:center;
+      justify-content: center;
     }
-    .logo{
-      a{
+    .logo {
+      a {
         display: flex;
         align-items: end;
         font-size: 22px;
@@ -241,7 +241,7 @@ const Wrapper = styled.nav`
       }
     }
   }
-  .mobile-nav{
+  .mobile-nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -251,14 +251,14 @@ const Wrapper = styled.nav`
     flex-direction: column;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: none;
-    .top{
+    .top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 10px;
     }
-    .logo{
-      a{
+    .logo {
+      a {
         display: flex;
         align-items: end;
         font-size: 22px;
@@ -274,7 +274,7 @@ const Wrapper = styled.nav`
       height: auto;
       margin-bottom: 4px;
     }
-    .action{
+    .action {
       display: flex;
       align-items: center;
       gap: 5px;
@@ -296,41 +296,39 @@ const Wrapper = styled.nav`
         right: -5px;
       }
     }
-    .bottom{
+    .bottom {
       display: flex;
       align-items: center;
       width: 95%;
       justify-content: space-between;
-     overflow: hidden;
-     border-radius: 3px;
+      overflow: hidden;
+      border-radius: 3px;
       margin: 10px;
       display: none;
-      input{
+      input {
         font-size: 15px;
         font-weight: 600;
         color: var(--text-color);
         border: none;
         outline: none;
         height: 100%;
-        border: 1px solid rgba(0,0,0,0.2);
-        padding:10px 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px 5px;
         width: 100%;
       }
-      button{
+      button {
         background-color: var(--primary-color);
         color: #fff;
         padding: 5px 10px;
         border: 1px solid var(--primary-color);
       }
     }
-
   }
-  @media only screen and (max-width:1113px){
-    .mobile-nav{
+  @media only screen and (max-width: 1113px) {
+    .mobile-nav {
       display: block;
-
     }
-    .desktop-nav{
+    .desktop-nav {
       display: block;
     }
   }
@@ -345,7 +343,7 @@ const Sidebar = styled.aside`
   z-index: 20;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   transition: all 0.5s;
-  &.show{
+  &.show {
     left: 0;
     transition: all 0.5s;
   }
@@ -407,6 +405,5 @@ const Sidebar = styled.aside`
       }
     }
   }
- 
 `;
 export default Header;
