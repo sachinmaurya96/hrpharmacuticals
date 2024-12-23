@@ -3,6 +3,7 @@ import HomePage from "./page/HomePage";
 import MainLayout from "./layout/MainLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutePage from "./page/AboutePage";
+import JsonLdSchemas from "./schema/JsonLdSchemas.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <JsonLdSchemas />
     </>
   );
 }
